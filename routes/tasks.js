@@ -117,7 +117,7 @@ router.delete("/tasks/:id", async (req, res) => {
     const deletedTask = await deleteTask(id, req.user.id);
 
     // TODO: Add proper HTTP status code for successful deletion
-     return res.staus(200).json({
+     return res.status(200).json({
       success: true,
       data: deletedTask,
     });

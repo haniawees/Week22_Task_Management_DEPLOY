@@ -3,7 +3,7 @@
 ## Base URL
 
 - Local: `http://localhost:3000/api`
-- Production: `https://your-app-name.onrender.com/api`
+- Production: `https://week22-task-management-deploy-1gkw.onrender.com`
 
 ---
 

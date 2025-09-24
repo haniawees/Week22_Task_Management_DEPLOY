@@ -55,7 +55,7 @@ router.post("/register", async (req, res) => {
      const token=jwt.sign(
       {userId:newUser.id},
       process.env.JWT_SECRET||"my secret",
-      {expiresIn:"48"}
+      {expiresIn:"24"}
 
      )
     // 6. Return the user data and token
@@ -114,7 +114,7 @@ router.post("/login", async (req, res) => {
      const token = jwt.sign(
       {userId: user.id , email:email},
       process.env.JWT_SECRET||"my secret",
-      {expiresIn: "48"}
+      {expiresIn: "24"}
      )
     // 5. Return the user data and token
     const { password: _, ...userData} = user;
